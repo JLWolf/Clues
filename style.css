@@ -1,0 +1,86 @@
+<style>
+td {
+  width:33%;
+}
+img.item {
+  vertical-align: sub;
+}
+img.loc {
+  vertical-align: sub;
+  height: 250px;
+  width: 250px;
+}
+
+body { background-color:#1b1b1b;
+}
+
+.table-dark {
+    background-color: #1b1b1b;
+    box-shadow: rgba(0, 0, 0, 0.39) 0px 3px 8px 2px;
+    color:#a4a4a4;
+}
+
+.list-group-item {
+    background-color: #1b1b1b;
+    box-shadow: rgba(0, 0, 0, 0.39) 0px 5px 2px 0px;
+    text-align: center;
+}
+
+.list-group-item-action{
+  color:#a4a4a4;
+}
+
+.list-group-item-action:hover{
+  background-color:#161616;
+}
+
+
+.bg-dark {
+  background-color:#161616!important;
+}
+
+
+h1 {
+  text-align: center;
+  color:#8f5b5b;
+  text-shadow:rgb(0, 0, 0) 0px 0px 5px;
+}
+
+caption {
+  caption-side: top;
+  color:#8f5b5b;
+  text-shadow:rgb(0, 0, 0) 0px 0px 2px;
+  font-size: 2.2rem;
+  font-family: "Segoe UI";
+  font-weight: 500;
+  padding-bottom: .25rem;
+  padding-top: .3rem;
+}
+
+travel {
+ color:#d0d0d0;
+ font-weight:bold;
+}
+
+thead {
+  background-color:#161616;
+}
+
+th {
+  text-align: center;
+  color:#d0d0d0;
+}
+
+#anagramTable {
+  text-align: center;
+}
+
+#emoteTable {
+  text-align: center;
+}
+
+#mapTable {
+  text-align: center;
+}
+
+</style>
