@@ -1,0 +1,338 @@
+<html>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+<link rel="stylesheet" type="text/css" href="style.css" />
+<script type="text/javascript" src="myJS.js"></script>
+
+<body>
+
+<div class="container">
+  <h1>RS Hard Clue Helper</h1>
+
+<input class="form-control bg-dark border-secondary mb-4" id="tableSearch" type="text" placeholder="Search clue">
+
+<ul class="list-group list-group-horizontal bg-dark mb-2">
+<a  class="list-group-item list-group-item-action col" href="#anagramClues">Anagram Clues</a>
+<a  class="list-group-item list-group-item-action col" href="#cordClues">Cordinate Clues</a>
+<a  class="list-group-item list-group-item-action col" href="#crypticClues">Cryptic Clues</a>
+<a  class="list-group-item list-group-item-action col" href="#emoteClues">Emote Clues</a>
+<a  class="list-group-item list-group-item-action col" href="#mapClues">Map Clues</a>
+</ul>
+
+<table id="anagramTable" class="table table-hover table-striped table-dark">
+  <caption id="anagramClues">Anagram Clues</caption>
+  <thead>
+  <tr>
+    <th>Clue</th>
+    <th>NPC</th>
+  </tr>
+</thead>
+<tbody id="myTable">
+  <tr>
+    <td>O BIRDZ A ZANY EN PC</td>
+    <td>Cap'n Izzy No-Beard</td>
+  </tr>
+  <tr>
+    <td>LARK IN DOG</td>
+    <td>King Roland</td>
+  </tr>
+  <tr>
+    <td>AHA JAR</td>
+    <td>Jaraah</td>
+  </tr>
+  <tr>
+    <td>BAIL TRIMS</td>
+    <td>Brimstail</td>
+  </tr>
+  <tr>
+    <td>C ON GAME HOC</td>
+    <td>Gnome Coach</td>
+  </tr>
+  <tr>
+    <td>GOBLIN KERN</td>
+    <td>King Bolren</td>
+  </tr>
+    <tr>
+    <td>ICY FE</td>
+    <td>Fycie</td>
+  </tr>
+</tbody>
+</table>
+
+
+<table id="cordTable" class="table table-hover table-striped table-dark">
+  <caption id="cordClues">Cordinate Clues</caption>
+  <thead>
+  <tr>
+    <th>Clue</th>
+    <th>Location</th>
+    <th>Teleport Method</th>
+  </tr>
+</thead>
+<tbody id="myTable">
+  <tr>
+    <td>25 degrees 03 minutes north 17 degrees 05 minutes east</td>
+    <td><img class="loc" src="25D03N17D05E.png"> <img class="loc" src="25D03N17D05E_Map.png"></td>
+    <td><travel>LUNARS </travel><img class="item" src="Spellbook.png"> - Ice Platue Teleport <br> <b> 8 <img class="item" src="Water_rune.png"> 3 <img class="item" src="Law_rune.png"> 3 <img class="item" src="Astral_rune.png"> </b> <br></td>
+  </tr>
+  <tr>
+    <td>16 degrees 03 minutes north 14 degrees 07 minutes east</td>
+    <td><img class="loc" src="16D03N14D07E.png"> <img class="loc" src="16D03N14D07E_Map.png"></td>
+    <td> <travel>LUNARS </travel><img class="item" src="Spellbook.png"> - Spellbook Swap <br> <b> 1 <img class="item" src="Law_rune.png"> 2 <img class="item" src="Cosmic_rune.png"> 3 <img class="item" src="Astral_rune.png"> </b> <br> <br> 
+
+    <travel>REGULAR </travel> <img class="item" src="Spellbook.png"> - Trollheim Teleport <br> <b> 2 <img class="item" src="law_rune.png"> 2 <img class="item" src ="Fire_rune.png"> </b> <br> </td>
+  </tr>
+  <tr>
+    <td>07 degrees 43 minutes south 12 degrees 26 minutes east</td>
+    <td><img class="loc" src="07D43S12D26E.png"> <img class="loc" src="07D43S12D26E_Map.png"></td>
+    <td> <travel>LUNARS </travel><img class="item" src="Spellbook.png"> - Spellbook Swap <br> <b> 1 <img class="item" src="Law_rune.png"> 2 <img class="item" src="Cosmic_rune.png"> 3 <img class="item" src="Astral_rune.png"> </b> <br>
+    <br> <travel>REGULAR</travel> <img class="item" src="Spellbook.png"> - Ardougne Teleport <br> <b> 2 <img class="item" src="Law_rune.png"> 2 <img class="item" src="Water_rune.png"></b> <br>
+    <br> <travel>CHARTER SHIP</travel> - Brimhaven (30 <img class="item" src="Coins.png">) <br>
+    <br> <travel>CART</travel> - Shilo Village (10 <img class="item" src="Coins.png">) <br>
+    <br> <travel>ENTER JUNGLE</travel> - <img class="item" src="Machete.png"> and <img class="item" src="Rune_axe.png"> required <br> </td>
+  </tr>
+  <tr>
+    <td>18 degrees 50 minutes north 20 degrees 26 minutes east</td>
+    <td> <img class="loc" src="18D50N20D26E.png"> <img class="loc" src="18D50N20D26E_Map.png"></td>
+    <td> <travel>LUNARS </travel><img class="item" src="Spellbook.png"> - Spellbook Swap <br> <b> 1 <img class="item" src="Law_rune.png"> 2 <img class="item" src="Cosmic_rune.png"> 3 <img class="item" src="Astral_rune.png"> </b> <br>
+    <br> <travel>ANCIENTS</travel> <img class="item" src="Spellbook.png"> -  Dareeyak Teleport <br> <b> 2 <img class="item" src="Law_rune.png"> 3 <img class="item" src="Fire_rune.png"> 2 <img class="item" src="Air_rune.png"> </b> <br> </td>
+  </tr>
+  <tr>
+    <td>24 degrees 56 minutes north 22 degrees 28 minutes east</td>
+    <td> <img class="loc" src="24D56N22D28E.png"> <img class="loc" src="24D56N22D28E_Map.png"></td>
+    <td><travel>LUNARS </travel><img class="item" src="Spellbook.png"> - Spellbook Swap <br> <b> 1 <img class="item" src="Law_rune.png"> 2 <img class="item" src="Cosmic_rune.png"> 3 <img class="item" src="Astral_rune.png"> </b> <br>
+    <br> <travel>REGULAR</travel> <img class="item" src="Spellbook.png"> - Ardougne Teleport <br> <b> 2 <img class="item" src="Law_rune.png"> 2 <img class="item" src="Water_rune.png"></b> <br>
+    <br> <b>Lever</b> </td>
+  </tr>
+  <tr>
+    <td>04 degrees 16 minutes south 16 degrees 16 minutes east</td>
+    <td><img class="loc" src="04D16S16D16E.png"> <img class="loc" src="04D16S16D16E_Map.png"></td>
+    <td><travel>LUNARS</travel> <img class="item\" src="Spellbook.png"> - Catherby Teleport <br> <b> 3 <img class="item" src="Law_rune.png"> 3 <img class="item" src="Astral_rune.png"> 10 <img class="item" src="Water_rune.png"> </b> <br>
+    <br> <b>Charter ship - (shipyard)</b> </td>
+  </tr>
+    <tr>
+    <td>15 degrees 30 minutes north 24 degrees 16 minutes east</td>
+    <td><img class="loc" src="15D30N24D16E.png"> <img class="loc" src="15D30N24D16E_Map.png"></td>
+    <td><travel>LUNARS </travel><img class="item" src="Spellbook.png"> - Spellbook Swap <br> <b> 1 <img class="item" src="Law_rune.png"> 2 <img class="item" src="Cosmic_rune.png"> 3 <img class="item" src="Astral_rune.png"> </b> <br>
+    <br><travel>ANCIENTS</travel> <img class="item" src="Spellbook.png"> -  Carrallangar Teleport <br> <b> 2 <img class="item" src="Law_rune.png"> 2 <img class="item" src="Soul_rune.png"> </b> <br> </td>
+  </tr>
+  <tr>
+    <td>03 degrees 45 minutes south 22 degrees 45 minutes east</td>
+    <td><img class="loc" src="03D45S22D45E.png"> <img class="loc" src="03D45S22D45E_Map.png"></td>
+    <td><travel>LUNARS </travel><img class="item" src="Spellbook.png"> - Spellbook Swap <br> <b> 1 <img class="item" src="Law_rune.png"> 2 <img class="item" src="Cosmic_rune.png"> 3 <img class="item" src="Astral_rune.png"> </b> <br>
+    <br><travel>ANCIENTS</travel> <img class="item" src="Spellbook.png"> -  Kharyll Teleport <br> <b> 2 <img class="item" src="Law_rune.png"> 1 <img class="item" src="Blood_rune.png"> </b> <br>
+    <br> FAIRY RING - BIQ </td>
+  </tr>
+  <tr>
+    <td>25 degrees 03 minutes north 23 degrees 24 minutes east</td>
+    <td><img class="loc" src="25D03N23D24E.png"> <img class="loc" src="25D03N23D24E_Map.png"></td>
+    <td><travel>LUNARS </travel><img class="item" src="Spellbook.png"> - Spellbook Swap <br> <b> 1 <img class="item" src="Law_rune.png"> 2 <img class="item" src="Cosmic_rune.png"> 3 <img class="item" src="Astral_rune.png"> </b> <br>
+    <br><travel>REGULAR</travel> <img class="item" src="Spellbook.png"> - Ardougne Teleport <br> <b> 2 <img class="item" src="Law_rune.png"> 2 <img class="item" src="Water_rune.png"></b> <br>
+    <br> <b>Lever</b> </td>
+  </tr>
+  <tr>
+    <td>05 degrees 50 minutes south 10 degrees 05 minutes east</td>
+    <td><img class="loc" src="05D50S10D05E.png"> <img class="loc" src="05D50S10D05E_Map.png"></td>
+    <td><travel>LUNARS </travel><img class="item" src="Spellbook.png"> - Spellbook Swap <br> <b> 1 <img class="item" src="Law_rune.png"> 2 <img class="item" src="Cosmic_rune.png"> 3 <img class="item" src="Astral_rune.png"> </b> <br>
+    <br><travel>ANCIENTS</travel> <img class="item" src="Spellbook.png"> -  Kharyll Teleport <br> <b> 2 <img class="item" src="Law_rune.png"> 1 <img class="item" src="Blood_rune.png"> </b> <br>
+    <br>FAIRY RING - CKR </td>
+  </tr>
+    <tr>
+    <td>22 degrees 45 minutes north 26 degrees 33 minutes east</td>
+    <td><img class="loc" src="22D45N26D33E.png"> <img class="loc" src="22D45N26D33E_Map.png"></td>
+    <td><travel>LUNARS </travel><img class="item" src="Spellbook.png"> - Spellbook Swap <br> <b> 1 <img class="item" src="Law_rune.png"> 2 <img class="item" src="Cosmic_rune.png"> 3 <img class="item" src="Astral_rune.png"> </b> <br>
+    <br><travel>ANCIENTS</travel> <img class="item" src="Spellbook.png"> -  Annakarl Teleport <br> <b> 2 <img class="item" src="Law_rune.png"> 2 <img class="item" src="blood_rune.png"> </b> <br></td>
+  </tr>
+    <tr>
+    <td>17 degrees 50 minutes north 08 degrees 30 minutes east</td>
+    <td><img class="loc" src="17D50N08D30E.png"> <img class="loc" src="17D50N08D30E_Map.png"></td>
+    <td><travel>LUNARS </travel><img class="item" src="Spellbook.png"> - Spellbook Swap <br> <b> 1 <img class="item" src="Law_rune.png"> 2 <img class="item" src="Cosmic_rune.png"> 3 <img class="item" src="Astral_rune.png"> </b> <br>
+    <br><travel>ANCIENTS</travel> <img class="item" src="Spellbook.png"> -  Kharyll Teleport <br> <b> 2 <img class="item" src="Law_rune.png"> 1 <img class="item" src="Blood_rune.png"> </b> <br>
+    <br>FAIRY RING - DKS </td>
+  </tr>
+    <tr>
+    <td>19 degrees 43 minutes north 25 degrees 07 minutes east</td>
+    <td><img class="loc" src="19D43N25D07E.png"> <img class="loc" src="19D43N25D07E_Map.png"></td>
+    <td><travel>LUNARS </travel><img class="item" src="Spellbook.png"> - Spellbook Swap <br> <b> 1 <img class="item" src="Law_rune.png"> 2 <img class="item" src="Cosmic_rune.png"> 3 <img class="item" src="Astral_rune.png"> </b> <br>
+    <br><travel>ANCIENTS</travel> <img class="item" src="Spellbook.png"> -  Annakarl Teleport <br> <b> 2 <img class="item" src="Law_rune.png"> 2 <img class="item" src="blood_rune.png"> </b> <br>
+    <br> </td>
+  </tr>
+    <tr>
+    <td>06 degrees 00 minutes south 21 degrees 48 minutes east</td>
+    <td><img class="loc" src="06D00S21D48E.png"> <img class="loc" src="06D00S21D48E_Map.png"></td>
+    <td><travel>LUNARS </travel><img class="item" src="Spellbook.png"> - Spellbook Swap <br> <b> 1 <img class="item" src="Law_rune.png"> 2 <img class="item" src="Cosmic_rune.png"> 3 <img class="item" src="Astral_rune.png"> </b> <br>
+    <br><travel>ANCIENTS</travel> <img class="item" src="Spellbook.png"> -  Kharyll Teleport <br> <b> 2 <img class="item" src="Law_rune.png"> 1 <img class="item" src="Blood_rune.png"> </b> <br>
+    <br>FAIRY RING - BIQ </td>
+  </tr>
+    <tr>
+    <td>16 degrees 07 minutes north 22 degrees 45 minutes east</td>
+    <td><img class="loc" src="16D07N22D45E.png"> <img class="loc" src="16D07N22D45E_Map.png"></td>
+    <td><travel>LUNARS </travel><img class="item" src="Spellbook.png"> - Spellbook Swap <br> <b> 1 <img class="item" src="Law_rune.png"> 2 <img class="item" src="Cosmic_rune.png"> 3 <img class="item" src="Astral_rune.png"> </b> <br>
+    <br><travel>ANCIENTS</travel> <img class="item" src="Spellbook.png"> -  Carrallangar Teleport <br> <b> 2 <img class="item" src="Law_rune.png"> 2 <img class="item" src="Soul_rune.png"> </b> <br>
+    <br></td>
+  </tr>
+    <tr>
+    <td>16 degrees 43 minutes north 19 degrees 13 minutes east</td>
+    <td><img class="loc" src="16D43N19D13E.png"> <img class="loc" src="16D43N19D13E_Map.png"></td>
+    <td><travel>LUNARS </travel><img class="item" src="Spellbook.png"> - Spellbook Swap <br> <b> 1 <img class="item" src="Law_rune.png"> 2 <img class="item" src="Cosmic_rune.png"> 3 <img class="item" src="Astral_rune.png"> </b> <br>
+    <br><travel>ANCIENTS</travel> <img class="item" src="Spellbook.png"> -  Dareeyak Teleport <br> <b> 2 <img class="item" src="Law_rune.png"> 3 <img class="item" src="Fire_rune.png"> 2 <img class="item" src="Air_rune.png"> </b> <br>
+    <br></td>
+  </tr>
+    <tr>
+    <td>19 degrees 00 minutes north 27 degrees 13 minutes east</td>
+    <td><img class="loc" src="19D00N27D13E.png"> <img class="loc" src="19D00N27D13E_Map.png"></td>
+    <td><travel>LUNARS </travel><img class="item" src="Spellbook.png"> - Spellbook Swap <br> <b> 1 <img class="item" src="Law_rune.png"> 2 <img class="item" src="Cosmic_rune.png"> 3 <img class="item" src="Astral_rune.png"> </b> <br>
+    <br><travel>ANCIENTS</travel> <img class="item" src="Spellbook.png"> -  Annakarl Teleport <br> <b> 2 <img class="item" src="Law_rune.png"> 2 <img class="item" src="blood_rune.png"> </b> <br>
+    <br></td>
+  </tr>
+    <tr>
+    <td>22 degrees 35 minutes north 19 degrees 18 minutes east</td>
+    <td><img class="loc" src="22D35N19D18E.png"> <img class="loc" src="22D35N19D18E_Map.png"></td>
+    <td><travel>LUNARS </travel><img class="item" src="Spellbook.png"> - Spellbook Swap <br> <b> 1 <img class="item" src="Law_rune.png"> 2 <img class="item" src="Cosmic_rune.png"> 3 <img class="item" src="Astral_rune.png"> </b> <br>
+    <br><travel>ANCIENTS</travel> <img class="item" src="Spellbook.png"> -  Ghorrock Teleport <br> <b> 8 <img class="item" src="Water_rune.png"> 2 <img class="item" src="Law_rune.png"></b> <br>
+    <br></td>
+  </tr>
+      <tr>
+    <td>24 degrees 24 minutes north 26 degrees 24 minutes east</td>
+    <td><img class="loc" src="24D24N26D24E.png"> <img class="loc" src="24D24N26D24E_Map.png"></td>
+    <td><travel>LUNARS </travel><img class="item" src="Spellbook.png"> - Spellbook Swap <br> <b> 1 <img class="item" src="Law_rune.png"> 2 <img class="item" src="Cosmic_rune.png"> 3 <img class="item" src="Astral_rune.png"> </b> <br>
+    <br><travel>ANCIENTS</travel> <img class="item" src="Spellbook.png"> -  Annakarl Teleport <br> <b> 2 <img class="item" src="Law_rune.png"> 2 <img class="item" src="blood_rune.png"> </b> <br>
+    <br></td>
+  </tr>
+      <tr>
+    <td>24 degrees 56 minutes north 22 degrees 56 minutes east</td>
+    <td><img class="loc" src="24D56N22D56E.png"> <img class="loc" src="24D56N22D56E_Map.png"></td>
+    <td><travel>LUNARS </travel><img class="item" src="Spellbook.png"> - Spellbook Swap <br> <b> 1 <img class="item" src="Law_rune.png"> 2 <img class="item" src="Cosmic_rune.png"> 3 <img class="item" src="Astral_rune.png"> </b> <br>
+    <br><travel>REGULAR</travel> <img class="item" src="Spellbook.png"> - Camelot Teleport <br> <b> 1 <img class="item" src="Law_rune.png"> 5 <img class="item" src="Air_rune.png"></b> <br>
+    <br><b>Lever</b> </td>
+  </tr>
+      <tr>
+    <td>24 degrees 58 minutes north 18 degrees 43 minutes east</td>
+    <td><img class="loc" src="24D58N18D43E.png"> <img class="loc" src="24D58N18D43E_Map.png"></td>
+    <td><travel>LUNARS </travel><img class="item" src="Spellbook.png"> - Spellbook Swap <br> <b> 1 <img class="item" src="Law_rune.png"> 2 <img class="item" src="Cosmic_rune.png"> 3 <img class="item" src="Astral_rune.png"> </b> <br>
+    <br></td>
+  </tr>
+</tbody>
+</table>
+
+
+<table id="crypticTable" class="table table-hover table-striped table-dark">
+  <caption id="crypticClues">Cryptic Clues</caption>
+  <thead>
+  <tr>
+    <th>Clue</th>
+    <th>Location</th>
+    <th>Teleport Method</th>
+  </tr>
+</thead>
+<tbody id="myTable">
+  <tr>
+    <td> If you look closely enough, it seems that the archers have lost more than their needles.</td>
+    <td><img class="loc" src="Haystack.png"></td>
+    <td> <travel>COMBAT BRACELET</travel> <img class="item" src="Combat_bracelet.png"> - Ranging Guild <br>
+      <br><b>OR</b><br>
+      <br><travel>LUNARS</travel> <img class="item" src="Spellbook.png"> - Fishing Guild Teleport <br> <b> 3 <img class="item" src="Law_rune.png"> 3 <img class="item" src="Astral_rune.png"> 10 <img class="item" src="Water_rune.png"> </b> <br></td>
+  </tr>
+  <tr>
+    <td>You have all of the elements available to solve this clue. Fortunately you do not have to go so far as to stand in a draft.</td>
+    <td><img class="loc" src="Battered.png"></td>
+    <td><travel>LUNARS </travel><img class="item" src="Spellbook.png"> - Spellbook Swap <br> <b> 1 <img class="item" src="Law_rune.png"> 2 <img class="item" src="Cosmic_rune.png"> 3 <img class="item" src="Astral_rune.png"> </b> <br>
+    <br><travel>REGULAR</travel> <img class="item" src="Spellbook.png"> - Camelot Teleport <br> <b> 1 <img class="item" src="Law_rune.png"> 5 <img class="item" src="Air_rune.png"></b> <br></td>
+  </tr>
+  <tr>
+    <td>This carte is mine, all mine, even if it is in the middle of the desert.</td>
+    <td><img class="loc" src="MiningCamp.png"></td>
+    <td><travel>LUNARS </travel><img class="item" src="Spellbook.png"> - Spellbook Swap <br> <b> 1 <img class="item" src="Law_rune.png"> 2 <img class="item" src="Cosmic_rune.png"> 3 <img class="item" src="Astral_rune.png"> </b> <br>
+    <br><travel>ANCIENTS</travel> <img class="item" src="Spellbook.png"> -  Kharyll Teleport <br> <b> 2 <img class="item" src="Law_rune.png"> 1 <img class="item" src="Blood_rune.png"> </b> <br>
+    <br><b>FAIRY RING</b> - <b>B I Q</b></td>
+  </tr>
+  <tr>
+    <td>This aviator is at the peak of his profession</td>
+    <td><img class="loc" src="GnomeMan.png"></td>
+    <td><b>RING OF DUELING</b> - Duel Arena
+      <br><b>GLIDER</b> - Ta Quir Priw
+      <br><b>GLIDER</b> - Sindarpos</td>
+  </tr>
+  <tr>
+    <td>I lie lonely and forgotten in mid wilderness, Where the dead rise from their beds. Feel free to Quarrel and wind me up, and dig while you shoot their heads.</td>
+    <td><img class="loc" src="Crossbow.png"></td>
+    <td><travel>LUNARS </travel><img class="item" src="Spellbook.png"> - Spellbook Swap <br> <b> 1 <img class="item" src="Law_rune.png"> 2 <img class="item" src="Cosmic_rune.png"> 3 <img class="item" src="Astral_rune.png"> </b> <br>
+    <br><travel>ANCIENTS</travel> <img class="item" src="Spellbook.png"> -  Carrallangar Teleport <br> <b> 2 <img class="item" src="Law_rune.png"> 2 <img class="item" src="Soul_rune.png"> </b> <br></td>
+  </tr>
+</tobdy>
+</table>
+
+
+<table id="emoteTable" class="table table-hover table-striped table-dark">
+  <caption id="emoteClues">Emote Clues</caption>
+  <thead>
+  <tr>
+    <th>Clue (equip)</th>
+  </tr>
+</thead>
+<tbody id="myTable">
+  <tr>
+    <td>Yawn in the rogue's general store.
+    <br><br> <b>Equip: </b> <img class="item" src="Adamant_sq_shield.png"> <img class="item" src="Blue_d'hide_vambraces.png"> <img class="item" src="Rune_pickaxe.png"></td>
+  </tr>
+  <tr>
+    <td>Salute in the Banana Plantation.
+      <br><br> <b>Equip: </b> <img class="item" src="Diamond_ring.png"> <img class="item" src="Amulet_of_power.png"> and nothing on your chest and legs.</td>
+  </tr>
+  <tr>
+    <td>Blow a kiss between the tables in Shilo Village bank.
+      <br><br> <b>Equip: </b> <img class="item" src="Mystic_hat.png"> <img class="item" src="Bone_spear.png"> <img class="item" src="Rune_platebody.png"></td>
+  </tr>
+  <tr>
+    <td>Blow a raspberry in the Fishing Guild bank.
+      <br><br> <b>Equip: </b> <img class="item" src="Elemental_shield.png"> <img class="item" src="Blue_d'hide_chaps.png"> <img class="item" src="Rune_warhammer.png"></td>
+  </tr>
+  <tr>
+    <td>Bow at the top of the lighthouse.
+    <br><br> <b>Equip: </b> <img class="item" src="Blue_d'hide_body.png"> <img class="item" src="Blue_d'hide_vambraces.png"> and no jewellery.</td>
+  </tr>
+  <tr>
+    <td>Dance at the cat-doored pyramid in Sophanem.
+    <br><br> <b>Equip: </b> <img class="item" src="Ring_of_life.png"> <img class="item" src="Amulet_of_glory.png"> <img class="item" src="Adamant_2h_sword.png"></td>
+  </tr>
+    <tr>
+    <td>Laugh in Jokul's tent in the Mountain Camp.
+    <br><br> <b>Equip: </b> <img class="item" src="Rune_full_helm.png"> <img class="item" src="Blue_d'hide_chaps.png"> <img class="item" src="Fire_battlestaff.png"></td>
+  </tr>
+    <tr>
+    <td>Panic by the pilot on White Wolf Mountain.
+      <br><br> <b>Equip: </b> <img class="item" src="Mithril_platelegs.png"> <img class="item" src="Ring_of_life.png"> <img class="item" src="Rune_axe.png"></td>
+  </tr>
+    <tr>
+    <td>Panic in the heart of the Haunted Woods.
+      <br><br> <b>Equip: </b> Have no items equipped when you do. </td>
+  </tr>
+    <tr>
+    <td>Shrug in the Zamorak temple found in the Eastern Wilderness.
+    <br><br> <b>Equip: </b> <img class="item" src="Rune_platelegs.png"> <img class="item" src="Iron_platebody.png"> <img class="item" src="Blue_d'hide_vambraces.png"></td>
+  </tr>
+</tbody>
+</table>
+
+
+<table id="mapTable" class="table table-hover table-striped table-dark">
+  <caption id="mapClues">Map Clues</caption>
+  <thead>
+  <tr>
+    <th>Clue (Map)</th>
+  </tr>
+</thead>
+<tbody id="myTable">
+  <tr>
+    <td><img src="Map_lumber.webp" alt="" height=250 width=250></img></td>
+  </tr>
+</tbody>
+</table>
+
+</div>
+</body>
+</html>
